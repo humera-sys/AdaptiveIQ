@@ -1,4 +1,3 @@
-
 # AdaptiveIQ: Smart Learning Agent
 # A learning buddy that adapts to you
 
