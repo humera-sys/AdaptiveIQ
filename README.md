@@ -1,3 +1,15 @@
+
+# AdaptiveIQ: Smart Learning Agent
+# Agent concepts demonstrated:
+#  Multi-agent system (ADK): 3 agents working together
+#   Agent 1: Mood Detector
+#   Agent 2: Decision Maker  
+#   Agent 3: Explainer
+#  MCP Server: session_tracker acts as memory
+#   context provider across the learning session
+#  Security: safety filter blocks harmful topics
+#  Deployable: runs on Kaggle, public link ready
+
 # AdaptiveIQ
 A learning system that actually pays attention to you
 
