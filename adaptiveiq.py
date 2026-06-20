@@ -1,7 +1,6 @@
-# ============================================
-# AdaptiveIQ - Smart Learning Agent
+
+# AdaptiveIQ: Smart Learning Agent
 # A learning buddy that adapts to you
-# ============================================
 
 from kaggle_secrets import UserSecretsClient
 from google import genai
@@ -70,7 +69,7 @@ def is_safe_topic(topic):
     banned = ["hack", "weapon", "drug", "violence", "adult"]
     for word in banned:
         if word.lower() in topic.lower():
-            print("⚠️ Sorry, that topic isn't available. Please choose an educational topic!")
+            print(" Sorry, that topic isn't available. Please choose an educational topic!")
             return False
     return True
 
@@ -84,26 +83,26 @@ def save_session(topic, session_log):
         "actions": [entry["action"] for entry in session_log]
     }
     all_sessions.append(session)
-    print(f"\n💾 Session saved! Total sessions so far: {len(all_sessions)}")
+    print(f"\n Session saved! Total sessions so far: {len(all_sessions)}")
     return session
 
 def show_history():
     if not all_sessions:
         print("No sessions yet!")
         return
-    print("\n📊 Your Learning History:")
+    print("\n Your Learning History:")
     print("=" * 40)
     for s in all_sessions:
-        print(f"\n📅 {s['date']}")
-        print(f"📖 Topic: {s['topic']}")
-        print(f"🔄 Rounds completed: {s['rounds']}")
-        print(f"😊 Moods detected: {', '.join(s['moods'])}")
-        print(f"🎯 Actions taken: {', '.join(s['actions'])}")
+        print(f"\n {s['date']}")
+        print(f" Topic: {s['topic']}")
+        print(f" Rounds completed: {s['rounds']}")
+        print(f" Moods detected: {', '.join(s['moods'])}")
+        print(f" Actions taken: {', '.join(s['actions'])}")
 
 # ── Main session: puts it all together ──
 def run_adaptiveiq():
     print("=" * 50)
-    print("       Welcome to AdaptiveIQ 🌱")
+    print("       Welcome to AdaptiveIQ ")
     print("  Your personal smart learning buddy")
     print("=" * 50)
 
@@ -123,17 +122,17 @@ def run_adaptiveiq():
         question = safe_generate(
             f"Ask one simple question about {topic} for a student. Just the question, nothing else."
         )
-        print(f"\n📝 Question: {question}")
+        print(f"\n Question: {question}")
 
         start = time.time()
         student_answer = input("Your answer: ")
         response_time = round(time.time() - start)
 
-        print("\n🔍 Checking how you're feeling...")
+        print("\n Checking how you're feeling...")
         mood = check_student_mood(student_answer, response_time)
         print(mood)
 
-        print("\n🧭 Adapting to you...")
+        print("\n Adapting to you...")
         next_step = decide_next_step(mood, topic)
         print(next_step)
 
@@ -142,7 +141,7 @@ def run_adaptiveiq():
             if line.startswith("Action:"):
                 action_word = line.replace("Action:", "").strip()
 
-        print("\n📚 Here's what I want you to know...")
+        print("\n Here's what I want you to know...")
         explanation = explain_topic(topic, action_word)
         print(explanation)
 
@@ -157,14 +156,14 @@ def run_adaptiveiq():
 
     save_session(topic, session_log)
 
-    print("\n✅ Session Complete!")
+    print("\n Session Complete!")
     print(f"You completed 3 rounds on: {topic}")
     print("\nYour session summary:\n")
     for entry in session_log:
         lines = entry['mood'].split("\n")
         state = lines[0] if lines else "engaged"
         print(f"  Round {entry['round']}: {state} → AdaptiveIQ chose to {entry['action']}")
-    print("\nKeep learning, you're doing amazing! 🌟")
+    print("\nKeep learning, you're doing amazing! ")
 
     print("\n")
     show_history()
