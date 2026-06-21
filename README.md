@@ -48,6 +48,9 @@ google genai SDK
 ## Agent concepts used
 
   Multi-agent system, three agents working as a team
+  
   Session state tracking, remembers what happened
+  
   Safety filtering, keeps content appropriate
+  
   Deployable on Kaggle, shareable with one link
