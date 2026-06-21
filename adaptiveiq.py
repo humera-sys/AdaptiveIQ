@@ -1,5 +1,5 @@
 # AdaptiveIQ: Smart Learning Agent
-# A learning buddy that adapts to you
+# A learning system that adapts to you
 
 from kaggle_secrets import UserSecretsClient
 from google import genai
