@@ -37,7 +37,7 @@ Based on that, it decides what to do next. Maybe you need a simpler explanation.
 2. Add your Gemini API key in Kaggle Secrets as "GEMINI_API_KEY"
 3. Run all cells in order
 4. Type any topic and start learning
-
+Note: Uses Gemini free tier. If you hit a 503 or quota error, wait 1-2 minutes and run again. The system retries automatically.
 ## Built with
 
 Google Gemini 2.5 Flash  
