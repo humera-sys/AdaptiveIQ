@@ -19,7 +19,7 @@ good at explaining things.
 
 ## What it does
 
-You type in any topic you're studying. AdaptiveIQ asks you questions about it but it's not just checking your answers. It's paying attention to how you answer. Are you uncertain? Taking a long time?
+You type in any topic you're studying. AdaptiveIQ asks you questions about it but it's not just checking your answers. It's paying attention to how you answer. Are you uncertain? Taking a long time?Breezing through?
 
 Based on that, it decides what to do next. Maybe you need a simpler explanation. Maybe you need encouragement. Maybe you're ready for something harder. It adjusts every single round.
 
@@ -36,14 +36,14 @@ Based on that, it decides what to do next. Maybe you need a simpler explanation.
 1. Open the notebook on Kaggle
 2. Add your Gemini API key in Kaggle Secrets as "GEMINI_API_KEY"
 3. Run all cells in order
-4. Type any topic and start learning!
+4. Type any topic and start learning
 
 ## Built with
 
-Google Gemini 2.5 Flash,
-Python,
-Kaggle Notebooks,
-google genai SDK
+Google Gemini 2.5 Flash  
+Python  
+Kaggle Notebooks  
+google-generativeai SDK
 
 ## Agent concepts used
 
@@ -53,4 +53,4 @@ google genai SDK
   
   Safety filtering, keeps content appropriate
   
-  Deployable on Kaggle, shareable with one link
+  
