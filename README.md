@@ -53,6 +53,9 @@ Session data is tracked in an MCP-inspired memory layer that remembers moods, ac
 ## Agent Concepts Used
 
   **Multi-agent system**   three agents working as a team
+  
   **Session state tracking**   MCP-inspired memory layer remembers what happened
+  
   **Safety filtering**   blocks inappropriate topics before any agent runs
+  
   **Deployability**   runs on Kaggle with a public shareable link
