@@ -46,8 +46,11 @@ Session data is tracked in an MCP-inspired memory layer that remembers moods, ac
 ## Built With
 
   Google Gemini 2.5 Flash
+  
   Python
+  
   Kaggle Notebooks
+  
   google-generativeai SDK
 
 ## Agent Concepts Used
