@@ -31,7 +31,9 @@ Session data is tracked in an MCP-inspired memory layer that remembers moods, ac
 ## The Three Agents
 
  **Mood Detector** looks at your answer and how long you took, then decides how you're feeling right now
+ 
  **Decision Maker** takes that mood and figures out the best next move for you
+ 
  **Explainer** delivers a response shaped around your current state, not a generic answer
 
 ## How to Run It
